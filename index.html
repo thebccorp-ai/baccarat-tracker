@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0a111f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Baccarat Tracker"><meta name="description" content="Baccarat tracker with Excel history import, bankroll syncing, session timer and editable history"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><title>Labouchere Baccarat — Mobile Tracker</title><style>:root{color-scheme:dark;--bg:#0a111f;--surface:#121d2e;--card:#162439;--line:#29384d;--text:#eff5fb;--muted:#9caec5;--blue:#429eff;--red:#ff6b7b;--green:#45dba0;--amber:#ffd17c}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0a111f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Baccarat Tracker"><meta name="description" content="Baccarat tracker with date-filtered session history, bankroll syncing, session timer and editable history"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><title>Labouchere Baccarat — Mobile Tracker v10</title><style>:root{color-scheme:dark;--bg:#0a111f;--surface:#121d2e;--card:#162439;--line:#29384d;--text:#eff5fb;--muted:#9caec5;--blue:#429eff;--red:#ff6b7b;--green:#45dba0;--amber:#ffd17c}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(850px 550px at 80% -260px,#233d68 5%,transparent 80%),var(--bg);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
 button,input,select{font:inherit}button{cursor:pointer;touch-action:manipulation}button:disabled{opacity:.4;cursor:not-allowed}input,select{color:var(--text)}a{color:var(--blue)}.app{max-width:900px;margin:0 auto;padding:0 16px 100px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:27px 0 18px}.brandmark{display:flex;align-items:center;gap:12px}.brandicon{width:39px;height:39px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(140deg,#48a5ff,#596be7);font-size:23px;font-weight:900;box-shadow:0 8px 30px #0c4e9b55}.brandtop{font-weight:850;letter-spacing:.11em;font-size:13px}.brandsub{font-size:12px;color:var(--muted);letter-spacing:.045em}.livepill{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:#152438;border-radius:25px;padding:8px 10px;font-size:12px;color:var(--muted);white-space:nowrap}.livepill:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px #45dba01c}.tabbar{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:#111d2d;padding:5px;border:1px solid var(--line);border-radius:15px;margin:0 0 19px}.tab{border:0;border-radius:10px;padding:12px 6px;background:transparent;color:var(--muted);font-weight:750;font-size:13px}.tab.selected{color:var(--text);background:#283b53;box-shadow:0 2px 8px #0002}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.stat{background:linear-gradient(140deg,#17263a,#121f31);border:1px solid var(--line);border-radius:14px;padding:15px 16px;min-width:0}.stat-label{display:block;font-size:11px;font-weight:750;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px}.metric-value{font-size:clamp(22px,6vw,32px);font-weight:850;letter-spacing:-.05em;line-height:1.15;overflow-wrap:anywhere}.positive{color:var(--green)!important}.negative{color:var(--red)!important}.muted{color:var(--muted)}.primary-stat{border-color:#335e86;background:linear-gradient(125deg,#173555,#17263b)}.status-banner{display:flex;align-items:center;gap:12px;margin:13px 0 15px;padding:12px 15px;border:1px solid var(--line);border-radius:13px;background:#152436}.status-banner>span:first-child{font-size:20px;color:var(--blue)}.status-banner b{display:block;font-size:12px;letter-spacing:.06em}.status-banner small{display:block;color:var(--muted);font-size:12px;margin-top:3px}.status-banner.cleared{border-color:#237354;background:#102d2a}.status-banner.cleared>span:first-child{color:var(--green)}.status-banner.playing>span:first-child{color:var(--amber)}.section{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:17px;padding:17px}.section-header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.section-title{font-size:13px;text-transform:uppercase;letter-spacing:.09em;margin:0;font-weight:850;color:#c6d8ea}.small-tag{font-size:11px;color:var(--muted);font-weight:650}.stake{display:flex;align-items:center;justify-content:space-between;gap:12px}.next-value{font-size:clamp(37px,11vw,62px);font-weight:870;letter-spacing:-.065em;line-height:1.1;color:#fff}.next-units{font-size:13px;color:var(--muted);padding-top:4px}.terms-badge{border-radius:12px;background:#203b54;padding:10px 14px;text-align:center;min-width:87px}.terms-badge strong{display:block;font-size:29px;line-height:1.1}.terms-badge small{display:block;font-size:10px;letter-spacing:.08em;margin-top:6px;color:#bdd3eb;font-weight:800;text-transform:uppercase}.seq-terms{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}.term{background:#1f3047;border:1px solid #34465e;border-radius:9px;padding:7px 11px;min-width:36px;text-align:center;font-size:14px;font-weight:800}.term.edge{background:#24588e;border-color:#357fb6}.zero-terms{color:var(--green);font-weight:800;font-size:13px}.section .explain{font-size:12px;color:var(--muted);margin:13px 0 0;line-height:1.55}.label{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.095em;font-weight:800;margin-bottom:8px}.sidepick{display:grid;grid-template-columns:1fr 1fr;gap:9px}.side{border:1px solid #405167;color:#9fb3ca;background:#17283e;border-radius:12px;padding:13px 8px;font-weight:900;font-size:14px;transition:background .12s}.side.active.blue{background:#123a69;border-color:#389bff;color:#cee9ff}.side.active.red{background:#612838;border-color:#ef667b;color:#ffe0e5}.result-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-top:12px}.result{min-width:0;border-radius:15px;border:1px solid transparent;min-height:94px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;font-weight:950;font-size:16px;box-shadow:inset 0 1px #ffffff22,0 7px 20px #0003;transition:transform .1s}.result:active{transform:scale(.96)}.result small{font-size:11px;font-weight:600;opacity:.85}.result.banker{background:#ad334c;border-color:#fb647e;color:#fff}.result.player{background:#1463ae;border-color:#3c9df0;color:#fff}.result.tie{background:#176a55;border-color:#34c498;color:#fff}.risk{margin-top:12px;padding:10px 12px;border-radius:10px;color:#ffd7a3;background:#483014;border:1px solid #86602d;font-size:12px;font-weight:650}.actions{display:flex;gap:9px;margin-top:15px}.btn{border:1px solid #3a536e;background:#22384f;color:var(--text);border-radius:12px;padding:12px 15px;font-weight:800;font-size:12px;min-height:45px}.btn:active{transform:scale(.985)}.btn-full{width:100%}.btn-primary{background:#267be0;border-color:#3ca2ff;color:white}.btn-muted{background:#172538}.stack{display:flex;flex-direction:column;gap:9px}.handrow{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 0;border-bottom:1px solid var(--line);font-size:13px}.handrow:last-child{border:0}.handrow>div:last-child{text-align:right}.handrow small{display:block;font-size:11px;color:var(--muted);margin-top:4px}.result-dot{width:9px;height:9px;display:inline-block;border-radius:50%;margin-right:5px}.result-dot.banker{background:var(--red)}.result-dot.player{background:var(--blue)}.result-dot.tie{background:var(--green)}.empty{text-align:center;color:var(--muted);font-size:13px;line-height:1.55;padding:12px}.timer-line{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px;border-top:1px solid var(--line);padding-top:14px}.timer-value{font-size:20px;font-weight:850}.helper{color:var(--muted);font-size:11px;line-height:1.5}.history-head{margin-bottom:18px}.page-title{font-size:24px;font-weight:850;letter-spacing:-.035em;margin:4px 0 6px}.page-sub{margin:0 0 18px;color:var(--muted);font-size:13px;line-height:1.6}.history-card{background:var(--surface);border:1px solid var(--line);border-radius:15px;margin:12px 0;padding:16px}.history-top{display:flex;justify-content:space-between;gap:8px;align-items:center}.history-top>div{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.history-top strong{font-size:19px}.status-pill{border-radius:7px;padding:4px 7px;font-size:10px;font-weight:800;letter-spacing:.04em}.status-pill.ok{background:#164332;color:#65e8a6}.status-pill.stopped{background:#503a1e;color:#ffd084}.history-meta{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:19px}.history-meta>div{display:flex;flex-direction:column;gap:4px}.history-meta small{color:var(--muted);font-size:11px}.history-meta b{font-size:12px}.session-foot{font-size:11px;color:var(--muted);padding-top:11px;margin:15px 0 0;border-top:1px solid var(--line)}.field{display:flex;flex-direction:column;gap:6px;margin:14px 0}.field span{color:#bfd0e0;font-size:12px;font-weight:700}.field input,.field select{width:100%;padding:13px 12px;border:1px solid #365068;border-radius:10px;background:#0d1a2a;outline:0;font-size:16px}.field input:focus,.field select:focus{border-color:var(--blue);box-shadow:0 0 0 3px #297cdb33}.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.footer{font-size:11px;line-height:1.6;color:var(--muted);text-align:center;padding:18px 0}.toast{position:fixed;bottom:28px;left:50%;transform:translate(-50%,16px);z-index:11;width:min(92vw,450px);background:#163f36;color:#ddfff0;border:1px solid #398f70;padding:13px 16px;border-radius:12px;box-shadow:0 8px 25px #0009;text-align:center;opacity:0;pointer-events:none;font-size:12px;font-weight:700;transition:opacity .2s,transform .2s}.toast.show{opacity:1;transform:translate(-50%,0)}.toast.error{background:#563042;border-color:#a45168;color:#ffe7e7}#page-history,#page-settings{padding-bottom:30px}[hidden]{display:none!important}@media(min-width:680px){.app{padding:0 28px 80px}.stats{grid-template-columns:repeat(4,1fr)}.stats .stat{min-height:112px}.dashboard-layout{display:grid;grid-template-columns:1.18fr 1fr;gap:15px;align-items:start}.dashboard-layout .section{margin-top:15px}.metrics-wide{grid-column:span 2}.history-meta{grid-template-columns:repeat(3,1fr)}.result{min-height:110px}}@media(max-width:360px){.top{padding-top:17px}.brandtop{font-size:12px}.brandsub{font-size:10px}.section{padding:13px}.result{min-height:85px;font-size:14px}.metric-value{font-size:22px}.tab{font-size:12px}.livepill{font-size:10px}}
 
@@ -49,6 +49,24 @@ body.modal-open{overflow:hidden}
 .recent-edit-btn{min-width:49px;min-height:36px;padding:7px 8px;color:#bce0ff;background:#1e3b59;border:1px solid #416c99;border-radius:8px;font-size:11px;font-weight:850}
 .handrow .hand-buttons{display:flex;align-items:center;justify-content:flex-end;gap:9px}
 .correction-modal select{color:#edf6ff}
+
+/* v10: Session history filtering by local calendar date */
+.history-filter{margin:4px 0 16px;border:1px solid #375976;background:linear-gradient(145deg,#172b42,#122439);border-radius:16px;padding:16px}
+.history-filter .section-title{margin:0 0 11px}
+.history-filter-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.history-filter-grid .field{margin:0}
+.history-filter-grid .field select,.history-filter-grid .field input{min-height:48px}
+.history-filter-grid .filter-preset{grid-column:1/-1}
+.history-filter .filter-actions{display:flex;gap:9px;margin-top:12px;align-items:center}
+.history-filter .filter-actions .btn{flex:1}
+.history-filter .filter-caption{color:#b9cce0;font-size:12px;line-height:1.55;margin:12px 0 0}
+.history-filter-summary{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin:6px 0 13px;font-size:12px;color:#b5cadf;line-height:1.5}
+.history-filter-summary b{color:#eff5fb}
+.history-filter-summary .date-range{color:#87baff;text-align:right}
+.history-filter-summary .filter-warning{color:#ffb6bf}
+.history-date-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;grid-column:1/-1}
+.history-date-row[hidden]{display:none}
+@media(max-width:380px){.history-filter{padding:13px}.history-filter-grid{gap:8px}.history-date-row{gap:8px}.history-filter-grid .field input{padding:11px 8px}}
 </style></head><body><div class="app"><header class="top">
  <div class="brandmark"><div class="brandicon" aria-hidden="true">L</div><div><div class="brandtop">LABOUCHERE</div><div class="brandsub">Baccarat · Mobile Tracker v8</div></div></div>
  <div class="livepill">On-device history</div>
@@ -85,8 +103,21 @@ body.modal-open{overflow:hidden}
   <div class="footer">Tap CORRECT LAST or EDIT beside a recent hand if you selected the wrong result. Corrections recalculate later suggested bets, bankroll and session status. Back up your data regularly.</div>
  </div></div>
 </main>
-<main id="page-history" hidden><h1 class="page-title">Session history</h1><p class="page-sub">Every completed or deliberately stopped sequence is kept here. Tap EDIT to correct a session, or DELETE to remove it after confirmation. Deleting a history record never changes your live bankroll.</p>
- <div class="stats history-head"><div class="stat"><span class="stat-label">Saved sessions</span><strong class="metric-value" id="histCount">0</strong></div><div class="stat"><span class="stat-label">Cleared</span><strong class="metric-value" id="histClear">0</strong></div><div class="stat"><span class="stat-label">Total P/L</span><strong class="metric-value" id="histProfit">€0.00</strong></div><div class="stat"><span class="stat-label">Total minutes</span><strong class="metric-value" id="histTime">0.0 min</strong></div></div>
+<main id="page-history" hidden><h1 class="page-title">Session history</h1><p class="page-sub">Filter by date to see profit/loss and duration for any period. Tap EDIT to correct a session, or DELETE to remove it after confirmation. Deleting a history record never changes your live bankroll.</p>
+ <section class="history-filter" aria-label="Filter sessions by date">
+  <h2 class="section-title">FILTER HISTORY BY DATE</h2>
+  <div class="history-filter-grid">
+   <label class="field filter-preset"><span>Time period</span><select id="histFilterPreset"><option value="all">All time</option><option value="today">Today</option><option value="yesterday">Yesterday</option><option value="week">This week (Mon–Sun)</option><option value="month">This month</option><option value="lastmonth">Last month</option><option value="last7">Last 7 days</option><option value="last30">Last 30 days</option><option value="year">This year</option><option value="custom">Custom date range</option></select></label>
+   <div id="histDateRange" class="history-date-row" hidden>
+    <label class="field"><span>From date</span><input id="histDateFrom" type="date" aria-label="History date from"></label>
+    <label class="field"><span>To date</span><input id="histDateTo" type="date" aria-label="History date to"></label>
+   </div>
+  </div>
+  <div class="filter-actions"><button id="histResetFilter" type="button" class="btn btn-muted">SHOW ALL DATES</button><button id="histExportFiltered" type="button" class="btn btn-primary">↓ EXPORT FILTERED CSV</button></div>
+  <p class="filter-caption">Uses each session's start date, or its finish date if the start is missing. Both selected dates are included. Sessions without any date appear under All time only.</p>
+ </section>
+ <div class="stats history-head"><div class="stat"><span class="stat-label">Sessions in range</span><strong class="metric-value" id="histCount">0</strong></div><div class="stat"><span class="stat-label">Cleared</span><strong class="metric-value" id="histClear">0</strong></div><div class="stat"><span class="stat-label">Total P/L</span><strong class="metric-value" id="histProfit">€0.00</strong></div><div class="stat"><span class="stat-label">Total minutes</span><strong class="metric-value" id="histTime">0.0 min</strong></div></div>
+ <div id="histRangeSummary" class="history-filter-summary" role="status" aria-live="polite"></div>
  <div class="actions"><button class="btn btn-primary" id="exportCsvBtn" style="flex:1">↓ EXPORT CSV</button><button class="btn" id="backupBtn" style="flex:1">↓ BACKUP ALL DATA</button></div>
  <section class="section import-section">
  <h2 class="section-title">IMPORT PREVIOUS EXCEL SESSIONS</h2>
@@ -382,22 +413,66 @@ function render(){
   document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('selected',b.dataset.page===state.page));
   for(const page of ['play','history','settings'])el('page-'+page).hidden=state.page!==page;
 }
+// Read-only date filter: never changes live play, saved history or imported records.
+function dateKey(ts){
+  if(ts==null||!Number.isFinite(Number(ts)))return null;
+  const d=new Date(Number(ts));
+  if(!Number.isFinite(d.getTime()))return null;
+  const z=n=>String(n).padStart(2,'0');
+  return `${d.getFullYear()}-${z(d.getMonth()+1)}-${z(d.getDate())}`;
+}
+function calendarDate(y,m,d){return dateKey(new Date(y,m,d,12,0,0).getTime());}
+function historyFilterWindow(){
+  const p=el('histFilterPreset').value;
+  const now=new Date(), y=now.getFullYear(),m=now.getMonth(),day=now.getDate(),dow=now.getDay();
+  const today=calendarDate(y,m,day);
+  if(p==='all')return {from:null,to:null,label:'All saved dates'};
+  if(p==='today')return {from:today,to:today,label:'Today'};
+  if(p==='yesterday'){const d=calendarDate(y,m,day-1);return {from:d,to:d,label:'Yesterday'};}
+  if(p==='week')return {from:calendarDate(y,m,day-((dow+6)%7)),to:calendarDate(y,m,day-((dow+6)%7)+6),label:'This week'};
+  if(p==='month')return {from:calendarDate(y,m,1),to:calendarDate(y,m+1,0),label:'This month'};
+  if(p==='lastmonth')return {from:calendarDate(y,m-1,1),to:calendarDate(y,m,0),label:'Last month'};
+  if(p==='last7')return {from:calendarDate(y,m,day-6),to:today,label:'Last 7 days'};
+  if(p==='last30')return {from:calendarDate(y,m,day-29),to:today,label:'Last 30 days'};
+  if(p==='year')return {from:calendarDate(y,0,1),to:calendarDate(y,11,31),label:'This year'};
+  if(p==='custom')return {from:el('histDateFrom').value||null,to:el('histDateTo').value||null,label:'Custom date range'};
+  return {from:null,to:null,label:'All saved dates'};
+}
+function getFilteredHistoryEntries(){
+  const win=historyFilterWindow();
+  const invalid=Boolean(win.from&&win.to&&win.from>win.to);
+  const entries=state.history.map((h,i)=>({h,sessionNumber:i+1}));
+  const undated=entries.filter(({h})=>dateKey(h.startedAt)===null&&dateKey(h.endedAt)===null).length;
+  const filtered=entries.filter(({h})=>{
+    if(invalid)return false;
+    if(!win.from&&!win.to)return true;
+    const k=dateKey(h.startedAt)??dateKey(h.endedAt);
+    return k!==null && (!win.from||k>=win.from)&&(!win.to||k<=win.to);
+  });
+  return {filtered,win,invalid,undated};
+}
 function renderHistory(){
-  const hist=state.history,finished=hist.filter(h=>h.status==='CLEARED');
-  const totalProfit=hist.reduce((x,h)=>x+(h.profitCents||0),0);
-  const totalMinutes=hist.reduce((x,h)=>x+(h.durationMinutes||0),0);
+  const {filtered,win,invalid,undated}=getFilteredHistoryEntries();
+  const hist=filtered.map(e=>e.h),finished=hist.filter(h=>h.status==='CLEARED');
+  const totalProfit=hist.reduce((x,h)=>x+(Number(h.profitCents)||0),0);
+  const totalMinutes=hist.reduce((x,h)=>x+(Number(h.durationMinutes)||0),0);
   el('histCount').textContent=hist.length;
   el('histClear').textContent=finished.length;
   el('histProfit').textContent=(totalProfit>0?'+':'')+euro(totalProfit);
   el('histProfit').className=`metric-value ${totalProfit>0?'positive':totalProfit<0?'negative':''}`;
   el('histTime').textContent=timeFmt(totalMinutes);
-  el('historyList').innerHTML=hist.length?hist.slice().reverse().map((h,i)=>`<article class="history-card">
-    <div class="history-top"><div><b>Session #${hist.length-i}</b><span class="status-pill ${h.status==='CLEARED'?'ok':'stopped'}">${htmlSafe(h.status)}</span></div><strong class="${h.profitCents>0?'positive':h.profitCents<0?'negative':''}">${h.profitCents>0?'+':''}${euro(h.profitCents)}</strong></div>
+  const range=win.from||win.to ? `${win.from||'Earliest'} → ${win.to||'Latest'}`:'All time';
+  const undatedNote=(win.from||win.to)&&undated?` · ${undated} undated session${undated===1?'':'s'} excluded`:'';
+  el('histRangeSummary').innerHTML=`<span>${invalid?'<b class="filter-warning">From date must be on or before To date.</b>':`<b>${hist.length}</b> of ${state.history.length} saved sessions${undatedNote}`}</span><span class="date-range">${range}</span>`;
+  el('histDateRange').hidden=el('histFilterPreset').value!=='custom';
+  el('histExportFiltered').disabled=!hist.length||invalid;
+  el('historyList').innerHTML=hist.length?filtered.slice().reverse().map(({h,sessionNumber})=>`<article class="history-card">
+    <div class="history-top"><div><b>Session #${sessionNumber}</b><span class="status-pill ${h.status==='CLEARED'?'ok':'stopped'}">${htmlSafe(h.status)}</span></div><strong class="${h.profitCents>0?'positive':h.profitCents<0?'negative':''}">${h.profitCents>0?'+':''}${euro(h.profitCents)}</strong></div>
     <div class="history-meta"><div><small>Start</small><b>${dateFmt(h.startedAt)}</b></div><div><small>Finish</small><b>${dateFmt(h.endedAt)}</b></div><div><small>Duration</small><b>${timeFmt(h.durationMinutes)}</b></div><div><small>Hands</small><b>${h.hands}</b></div><div><small>Opening</small><b>${euro(h.openingCents)}</b></div><div><small>Closing</small><b>${euro(h.closingCents)}</b></div></div>
     <p class="session-foot">Banker ${h.bankerResults||0} · Player ${h.playerResults||0} · Tie ${h.ties||0}</p>
     ${h.notes?`<p class="history-notes">${htmlSafe(h.notes)}</p>`:''}
-    <div class="history-actions"><span class="helper">${h.editedAt?'✎ Corrected '+dateFmt(h.editedAt):'Saved session'}</span><div class="history-action-buttons"><button class="history-edit-btn" data-edit-id="${htmlSafe(h.id)}" type="button" aria-label="Edit session ${hist.length-i}">✎ EDIT</button><button class="history-delete-btn" data-delete-id="${htmlSafe(h.id)}" type="button" aria-label="Delete session ${hist.length-i}">✕ DELETE</button></div></div>
-  </article>`).join(''):'<p class="empty">No saved sessions yet. A session is saved automatically when the sequence reaches zero terms.</p>';
+    <div class="history-actions"><span class="helper">${h.editedAt?'✎ Corrected '+dateFmt(h.editedAt):'Saved session'}</span><div class="history-action-buttons"><button class="history-edit-btn" data-edit-id="${htmlSafe(h.id)}" type="button" aria-label="Edit session ${sessionNumber}">✎ EDIT</button><button class="history-delete-btn" data-delete-id="${htmlSafe(h.id)}" type="button" aria-label="Delete session ${sessionNumber}">✕ DELETE</button></div></div>
+  </article>`).join(''): `<p class="empty">${state.history.length?'No saved sessions match the selected dates. Adjust the filter or tap SHOW ALL DATES.':'No saved sessions yet. A session is saved automatically when the sequence reaches zero terms.'}</p>`;
 }
 
 
@@ -541,12 +616,15 @@ function downloadFile(filename,content,mime){
   const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);
 }
 const csvSafe=s=> {const t=String(s);return /^[\s]*[=+\-@]/.test(t)&&isNaN(Number(t))?"'"+t:t;};
-function exportCsv(){
+function exportCsv(filtered=false){
+  const entries=filtered?getFilteredHistoryEntries().filtered:state.history.map((h,i)=>({h,sessionNumber:i+1}));
   const header=['Session','Start','End','Minutes','Hands','Status','Profit EUR','Opening EUR','Closing EUR','Banker','Player','Tie','Notes','Last Edited'];
-  const rows=state.history.map((h,i)=>[i+1,h.startedAt==null?'':new Date(h.startedAt).toISOString(),h.endedAt==null?'':new Date(h.endedAt).toISOString(),h.durationMinutes.toFixed(2),h.hands,h.status,(h.profitCents/100).toFixed(2),(h.openingCents/100).toFixed(2),(h.closingCents/100).toFixed(2),h.bankerResults||0,h.playerResults||0,h.ties||0,h.notes||'',h.editedAt?new Date(h.editedAt).toISOString():'']);
-  downloadFile('baccarat_session_history.csv',[header,...rows].map(row=>row.map(s=>'"'+csvSafe(s).replace(/"/g,'""')+'"').join(',')).join('\r\n'),'text/csv;charset=utf-8');
-  notify('Session history CSV exported.');
+  const rows=entries.map(({h,sessionNumber})=>[sessionNumber,h.startedAt==null?'':new Date(h.startedAt).toISOString(),h.endedAt==null?'':new Date(h.endedAt).toISOString(),Number(h.durationMinutes||0).toFixed(2),h.hands,h.status,(h.profitCents/100).toFixed(2),(h.openingCents/100).toFixed(2),(h.closingCents/100).toFixed(2),h.bankerResults||0,h.playerResults||0,h.ties||0,h.notes||'',h.editedAt?new Date(h.editedAt).toISOString():'']);
+  const name=filtered?'baccarat_session_history_filtered.csv':'baccarat_session_history.csv';
+  downloadFile(name,[header,...rows].map(row=>row.map(s=>'"'+csvSafe(s).replace(/"/g,'""')+'"').join(',')).join('\r\n'),'text/csv;charset=utf-8');
+  notify(`${entries.length} session${entries.length===1?'':'s'} exported to CSV.`);
 }
+
 function exportBackup(){downloadFile('baccarat_backup_'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify({version:2,settings:state.settings,session:state.session,history:state.history,deletedHistoryIds:state.deletedHistoryIds},null,2),'application/json');notify('Full backup exported.');}
 function importBackup(ev){
   const file=ev.target.files?.[0];if(!file)return;
@@ -873,7 +951,14 @@ window.addEventListener('DOMContentLoaded',()=>{
   el('newSeqBtn').addEventListener('click',startNewSession);
   el('saveSessionBtn').addEventListener('click',saveSession);
   el('settingsForm').addEventListener('submit',applySettings);
-  el('exportCsvBtn').addEventListener('click',exportCsv);
+  el('exportCsvBtn').addEventListener('click',()=>exportCsv(false));
+  el('histExportFiltered').addEventListener('click',()=>exportCsv(true));
+  el('histFilterPreset').addEventListener('change',renderHistory);
+  el('histDateFrom').addEventListener('change',renderHistory);
+  el('histDateTo').addEventListener('change',renderHistory);
+  el('histResetFilter').addEventListener('click',()=>{
+    el('histFilterPreset').value='all'; el('histDateFrom').value=''; el('histDateTo').value=''; renderHistory();
+  });
   el('backupBtn').addEventListener('click',exportBackup);
   el('restoreInput').addEventListener('change',importBackup);
   el('excelHistoryInput').addEventListener('change',importExcelHistory);
