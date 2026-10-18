@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0a111f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Baccarat Tracker"><meta name="description" content="Baccarat tracker with date-filtered session history, bankroll syncing, session timer and editable history"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><title>Labouchere Baccarat — Mobile Tracker v10</title><style>:root{color-scheme:dark;--bg:#0a111f;--surface:#121d2e;--card:#162439;--line:#29384d;--text:#eff5fb;--muted:#9caec5;--blue:#429eff;--red:#ff6b7b;--green:#45dba0;--amber:#ffd17c}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0a111f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Baccarat Tracker"><meta name="description" content="Baccarat tracker with date-filtered session history, bankroll syncing, session timer and editable history"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><title>Labouchere Baccarat — v10 + Withdrawals</title><style>:root{color-scheme:dark;--bg:#0a111f;--surface:#121d2e;--card:#162439;--line:#29384d;--text:#eff5fb;--muted:#9caec5;--blue:#429eff;--red:#ff6b7b;--green:#45dba0;--amber:#ffd17c}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(850px 550px at 80% -260px,#233d68 5%,transparent 80%),var(--bg);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
 button,input,select{font:inherit}button{cursor:pointer;touch-action:manipulation}button:disabled{opacity:.4;cursor:not-allowed}input,select{color:var(--text)}a{color:var(--blue)}.app{max-width:900px;margin:0 auto;padding:0 16px 100px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:27px 0 18px}.brandmark{display:flex;align-items:center;gap:12px}.brandicon{width:39px;height:39px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(140deg,#48a5ff,#596be7);font-size:23px;font-weight:900;box-shadow:0 8px 30px #0c4e9b55}.brandtop{font-weight:850;letter-spacing:.11em;font-size:13px}.brandsub{font-size:12px;color:var(--muted);letter-spacing:.045em}.livepill{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:#152438;border-radius:25px;padding:8px 10px;font-size:12px;color:var(--muted);white-space:nowrap}.livepill:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px #45dba01c}.tabbar{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:#111d2d;padding:5px;border:1px solid var(--line);border-radius:15px;margin:0 0 19px}.tab{border:0;border-radius:10px;padding:12px 6px;background:transparent;color:var(--muted);font-weight:750;font-size:13px}.tab.selected{color:var(--text);background:#283b53;box-shadow:0 2px 8px #0002}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.stat{background:linear-gradient(140deg,#17263a,#121f31);border:1px solid var(--line);border-radius:14px;padding:15px 16px;min-width:0}.stat-label{display:block;font-size:11px;font-weight:750;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px}.metric-value{font-size:clamp(22px,6vw,32px);font-weight:850;letter-spacing:-.05em;line-height:1.15;overflow-wrap:anywhere}.positive{color:var(--green)!important}.negative{color:var(--red)!important}.muted{color:var(--muted)}.primary-stat{border-color:#335e86;background:linear-gradient(125deg,#173555,#17263b)}.status-banner{display:flex;align-items:center;gap:12px;margin:13px 0 15px;padding:12px 15px;border:1px solid var(--line);border-radius:13px;background:#152436}.status-banner>span:first-child{font-size:20px;color:var(--blue)}.status-banner b{display:block;font-size:12px;letter-spacing:.06em}.status-banner small{display:block;color:var(--muted);font-size:12px;margin-top:3px}.status-banner.cleared{border-color:#237354;background:#102d2a}.status-banner.cleared>span:first-child{color:var(--green)}.status-banner.playing>span:first-child{color:var(--amber)}.section{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:17px;padding:17px}.section-header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.section-title{font-size:13px;text-transform:uppercase;letter-spacing:.09em;margin:0;font-weight:850;color:#c6d8ea}.small-tag{font-size:11px;color:var(--muted);font-weight:650}.stake{display:flex;align-items:center;justify-content:space-between;gap:12px}.next-value{font-size:clamp(37px,11vw,62px);font-weight:870;letter-spacing:-.065em;line-height:1.1;color:#fff}.next-units{font-size:13px;color:var(--muted);padding-top:4px}.terms-badge{border-radius:12px;background:#203b54;padding:10px 14px;text-align:center;min-width:87px}.terms-badge strong{display:block;font-size:29px;line-height:1.1}.terms-badge small{display:block;font-size:10px;letter-spacing:.08em;margin-top:6px;color:#bdd3eb;font-weight:800;text-transform:uppercase}.seq-terms{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}.term{background:#1f3047;border:1px solid #34465e;border-radius:9px;padding:7px 11px;min-width:36px;text-align:center;font-size:14px;font-weight:800}.term.edge{background:#24588e;border-color:#357fb6}.zero-terms{color:var(--green);font-weight:800;font-size:13px}.section .explain{font-size:12px;color:var(--muted);margin:13px 0 0;line-height:1.55}.label{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.095em;font-weight:800;margin-bottom:8px}.sidepick{display:grid;grid-template-columns:1fr 1fr;gap:9px}.side{border:1px solid #405167;color:#9fb3ca;background:#17283e;border-radius:12px;padding:13px 8px;font-weight:900;font-size:14px;transition:background .12s}.side.active.blue{background:#123a69;border-color:#389bff;color:#cee9ff}.side.active.red{background:#612838;border-color:#ef667b;color:#ffe0e5}.result-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-top:12px}.result{min-width:0;border-radius:15px;border:1px solid transparent;min-height:94px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;font-weight:950;font-size:16px;box-shadow:inset 0 1px #ffffff22,0 7px 20px #0003;transition:transform .1s}.result:active{transform:scale(.96)}.result small{font-size:11px;font-weight:600;opacity:.85}.result.banker{background:#ad334c;border-color:#fb647e;color:#fff}.result.player{background:#1463ae;border-color:#3c9df0;color:#fff}.result.tie{background:#176a55;border-color:#34c498;color:#fff}.risk{margin-top:12px;padding:10px 12px;border-radius:10px;color:#ffd7a3;background:#483014;border:1px solid #86602d;font-size:12px;font-weight:650}.actions{display:flex;gap:9px;margin-top:15px}.btn{border:1px solid #3a536e;background:#22384f;color:var(--text);border-radius:12px;padding:12px 15px;font-weight:800;font-size:12px;min-height:45px}.btn:active{transform:scale(.985)}.btn-full{width:100%}.btn-primary{background:#267be0;border-color:#3ca2ff;color:white}.btn-muted{background:#172538}.stack{display:flex;flex-direction:column;gap:9px}.handrow{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 0;border-bottom:1px solid var(--line);font-size:13px}.handrow:last-child{border:0}.handrow>div:last-child{text-align:right}.handrow small{display:block;font-size:11px;color:var(--muted);margin-top:4px}.result-dot{width:9px;height:9px;display:inline-block;border-radius:50%;margin-right:5px}.result-dot.banker{background:var(--red)}.result-dot.player{background:var(--blue)}.result-dot.tie{background:var(--green)}.empty{text-align:center;color:var(--muted);font-size:13px;line-height:1.55;padding:12px}.timer-line{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px;border-top:1px solid var(--line);padding-top:14px}.timer-value{font-size:20px;font-weight:850}.helper{color:var(--muted);font-size:11px;line-height:1.5}.history-head{margin-bottom:18px}.page-title{font-size:24px;font-weight:850;letter-spacing:-.035em;margin:4px 0 6px}.page-sub{margin:0 0 18px;color:var(--muted);font-size:13px;line-height:1.6}.history-card{background:var(--surface);border:1px solid var(--line);border-radius:15px;margin:12px 0;padding:16px}.history-top{display:flex;justify-content:space-between;gap:8px;align-items:center}.history-top>div{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.history-top strong{font-size:19px}.status-pill{border-radius:7px;padding:4px 7px;font-size:10px;font-weight:800;letter-spacing:.04em}.status-pill.ok{background:#164332;color:#65e8a6}.status-pill.stopped{background:#503a1e;color:#ffd084}.history-meta{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:19px}.history-meta>div{display:flex;flex-direction:column;gap:4px}.history-meta small{color:var(--muted);font-size:11px}.history-meta b{font-size:12px}.session-foot{font-size:11px;color:var(--muted);padding-top:11px;margin:15px 0 0;border-top:1px solid var(--line)}.field{display:flex;flex-direction:column;gap:6px;margin:14px 0}.field span{color:#bfd0e0;font-size:12px;font-weight:700}.field input,.field select{width:100%;padding:13px 12px;border:1px solid #365068;border-radius:10px;background:#0d1a2a;outline:0;font-size:16px}.field input:focus,.field select:focus{border-color:var(--blue);box-shadow:0 0 0 3px #297cdb33}.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.footer{font-size:11px;line-height:1.6;color:var(--muted);text-align:center;padding:18px 0}.toast{position:fixed;bottom:28px;left:50%;transform:translate(-50%,16px);z-index:11;width:min(92vw,450px);background:#163f36;color:#ddfff0;border:1px solid #398f70;padding:13px 16px;border-radius:12px;box-shadow:0 8px 25px #0009;text-align:center;opacity:0;pointer-events:none;font-size:12px;font-weight:700;transition:opacity .2s,transform .2s}.toast.show{opacity:1;transform:translate(-50%,0)}.toast.error{background:#563042;border-color:#a45168;color:#ffe7e7}#page-history,#page-settings{padding-bottom:30px}[hidden]{display:none!important}@media(min-width:680px){.app{padding:0 28px 80px}.stats{grid-template-columns:repeat(4,1fr)}.stats .stat{min-height:112px}.dashboard-layout{display:grid;grid-template-columns:1.18fr 1fr;gap:15px;align-items:start}.dashboard-layout .section{margin-top:15px}.metrics-wide{grid-column:span 2}.history-meta{grid-template-columns:repeat(3,1fr)}.result{min-height:110px}}@media(max-width:360px){.top{padding-top:17px}.brandtop{font-size:12px}.brandsub{font-size:10px}.section{padding:13px}.result{min-height:85px;font-size:14px}.metric-value{font-size:22px}.tab{font-size:12px}.livepill{font-size:10px}}
 
@@ -67,8 +67,20 @@ body.modal-open{overflow:hidden}
 .history-date-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;grid-column:1/-1}
 .history-date-row[hidden]{display:none}
 @media(max-width:380px){.history-filter{padding:13px}.history-filter-grid{gap:8px}.history-date-row{gap:8px}.history-filter-grid .field input{padding:11px 8px}}
+
+/* v10 withdrawal tracker — isolated account transfers */
+.withdraw-strip{margin-top:13px;padding:13px;border-radius:12px;background:#173348;border:1px solid #3f7192;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.withdraw-strip .btn{background:#1e6182;border-color:#49abc9;color:#e2faff}
+.withdraw-amount{font-size:20px;font-weight:850;color:#a4e8fa}
+.withdraw-amount small{font-size:11px;font-weight:650;color:#b7ccdc;display:block;margin-top:3px}
+.withdraw-list{display:flex;flex-direction:column;gap:10px}
+.withdraw-entry{border:1px solid #344e63;border-radius:11px;background:#152539;padding:12px;display:flex;justify-content:space-between;gap:9px;align-items:center}
+.withdraw-entry small{display:block;font-size:11px;color:var(--muted);margin-top:4px;overflow-wrap:anywhere;max-width:55ch}
+.withdraw-entry b{font-size:17px;color:#a4e8fa;white-space:nowrap}
+.cash-caption{font-size:11px;line-height:1.6;color:var(--muted);margin-top:8px}
+@media(max-width:420px){.withdraw-strip{align-items:stretch}.withdraw-strip .btn{width:100%}}
 </style></head><body><div class="app"><header class="top">
- <div class="brandmark"><div class="brandicon" aria-hidden="true">L</div><div><div class="brandtop">LABOUCHERE</div><div class="brandsub">Baccarat · Mobile Tracker v8</div></div></div>
+ <div class="brandmark"><div class="brandicon" aria-hidden="true">L</div><div><div class="brandtop">LABOUCHERE</div><div class="brandsub">Baccarat · Mobile Tracker v10 · Withdrawals</div></div></div>
  <div class="livepill">On-device history</div>
 </header>
 <nav class="tabbar" aria-label="App sections"><button class="tab selected" data-page="play">LIVE TRACKER</button><button class="tab" data-page="history">HISTORY</button><button class="tab" data-page="settings">SETTINGS</button></nav>
@@ -96,6 +108,8 @@ body.modal-open{overflow:hidden}
    <div id="riskNotice" class="risk" hidden></div>
    <div class="actions"><button class="btn btn-muted" id="undoBtn">↶ UNDO LAST</button><button class="btn btn-correct" id="correctLastBtn">✎ CORRECT LAST</button></div>
    <div class="actions"><button class="btn btn-primary btn-full" id="newSeqBtn">↻ RESET / NEW SEQUENCE</button></div>
+   <div class="withdraw-strip"><div><div class="withdraw-amount" id="liveWithdrawTotal">€0.00</div><small class="helper">Total withdrawals sent to bank</small></div><button class="btn" type="button" id="openWithdrawBtn">↗ WITHDRAW TO BANK</button></div>
+   <p class="cash-caption">Log a withdrawal you have made yourself. This records it in the app and reduces your available bankroll; it does not send money to a bank or change betting profit/loss.</p>
    <p class="explain">Tie is treated as a push; Banker payouts deduct commission. A completed sequence is saved automatically when terms reach 0.</p>
   </section>
  </div><div>
@@ -118,6 +132,15 @@ body.modal-open{overflow:hidden}
  </section>
  <div class="stats history-head"><div class="stat"><span class="stat-label">Sessions in range</span><strong class="metric-value" id="histCount">0</strong></div><div class="stat"><span class="stat-label">Cleared</span><strong class="metric-value" id="histClear">0</strong></div><div class="stat"><span class="stat-label">Total P/L</span><strong class="metric-value" id="histProfit">€0.00</strong></div><div class="stat"><span class="stat-label">Total minutes</span><strong class="metric-value" id="histTime">0.0 min</strong></div></div>
  <div id="histRangeSummary" class="history-filter-summary" role="status" aria-live="polite"></div>
+ <section class="section" aria-label="Withdrawal history">
+  <div class="section-header"><h2 class="section-title">BANK WITHDRAWALS</h2><span class="small-tag">Not betting losses</span></div>
+  <div class="stats"><div class="stat"><span class="stat-label">Total withdrawn · all time</span><strong class="metric-value" id="totalWithdrawnValue">€0.00</strong></div>
+  <div class="stat"><span class="stat-label">Withdrawn · selected period</span><strong class="metric-value" id="rangeWithdrawnValue">€0.00</strong></div>
+  <div class="stat"><span class="stat-label">Number of withdrawals</span><strong class="metric-value" id="withdrawCountValue">0</strong></div></div>
+  <p class="cash-caption">Uses the History date filter above. Each transfer is recorded when you press Confirm Withdrawal. Amounts are subtracted from your live bankroll, not from session profit.</p>
+  <div class="actions"><button class="btn btn-muted btn-full" type="button" id="exportWithdrawalsBtn">↓ EXPORT WITHDRAWALS CSV</button></div>
+  <div id="withdrawalList" class="withdraw-list" style="margin-top:12px"></div>
+ </section>
  <div class="actions"><button class="btn btn-primary" id="exportCsvBtn" style="flex:1">↓ EXPORT CSV</button><button class="btn" id="backupBtn" style="flex:1">↓ BACKUP ALL DATA</button></div>
  <section class="section import-section">
  <h2 class="section-title">IMPORT PREVIOUS EXCEL SESSIONS</h2>
@@ -126,7 +149,7 @@ body.modal-open{overflow:hidden}
  <p id="excelImportStatus" class="import-status" role="status">Your Excel file stays on this device. Import does not modify your current bankroll.</p>
  <details id="excelImportDetails" class="import-debug" hidden><summary>Show import report / every detected row</summary><pre id="excelImportReport" class="import-report"></pre><button class="btn" id="downloadImportReportBtn" type="button">↓ DOWNLOAD IMPORT REPORT</button></details>
  </section>
- <div id="historyList"></div><div class="footer">History imported from Excel stays in this browser only. Export a JSON backup after importing so you can restore or transfer it later.</div>
+ <div id="historyList"></div><div class="footer">Session history and withdrawals stay in this browser only. BACKUP ALL DATA exports both. Before switching files, browser, or GitHub URL, export and restore that JSON backup.</div>
 </main>
 <main id="page-settings" hidden><h1 class="page-title">Session settings</h1><p class="page-sub">Change unit value, sequence, and limits. Changing your bankroll updates Live Tracker immediately. Other betting rules update at the next sequence if a session is active.</p>
  <form id="settingsForm" class="section"><h2 class="section-title">Betting rules</h2>
@@ -146,6 +169,18 @@ body.modal-open{overflow:hidden}
  <section class="section"><h2 class="section-title">Transfer / restore your data</h2><p class="explain">Export the backup JSON from History, then restore it here. This replaces this device's current data.</p><label class="field"><span>Restore a previous JSON backup</span><input type="file" id="restoreInput" accept=".json,application/json"></label></section>
  <div class="footer">Baccarat rules assume standard commission Banker bet and ordinary Banker/Player wagers. No side bets or special no-commission variants.</div>
 </main>
+<div id="withdrawOverlay" class="modal-backdrop" hidden role="dialog" aria-modal="true" aria-labelledby="withdrawTitle">
+ <section class="edit-modal" role="document"><div class="edit-header"><div><div class="eyebrow">LIVE TRACKER · CASH MOVEMENT</div><h2 id="withdrawTitle">Record bank withdrawal</h2></div><button class="icon-btn" type="button" id="withdrawCloseBtn" aria-label="Close">✕</button></div>
+ <p class="edit-explain">Enter an amount that you have already withdrawn to your bank. This only updates your tracker; no bank transfer is performed.</p>
+ <form id="withdrawForm">
+  <div class="edit-closing">Available bankroll <strong id="withdrawAvailable">€0.00</strong></div>
+  <label class="field"><span>Amount transferred to bank (€)</span><input name="amount" type="number" min="0.01" step="0.01" required inputmode="decimal" placeholder="100.00"></label>
+  <label class="field"><span>Note (optional)</span><input name="note" maxlength="120" placeholder="e.g. Transfer to bank account"></label>
+  <p class="edit-hint">The date and time are logged automatically. Withdrawals remain in History when you reset your betting sequence.</p>
+  <p id="withdrawError" class="edit-error" role="alert" hidden></p>
+  <div class="edit-actions"><button type="button" class="btn" id="withdrawCancelBtn">CANCEL</button><button type="submit" class="btn btn-primary">CONFIRM WITHDRAWAL</button></div>
+ </form></section>
+</div>
 <div id="correctHandOverlay" class="modal-backdrop" hidden role="dialog" aria-modal="true" aria-labelledby="correctHandTitle">
  <div class="edit-modal correction-modal"><div class="edit-header"><div><div class="eyebrow">LIVE SESSION</div><h2 id="correctHandTitle">Correct hand result</h2></div><button id="correctCloseBtn" class="icon-btn" type="button" aria-label="Close correction">✕</button></div>
   <p class="edit-explain">Change the actual winning result or the side you bet. This keeps the hand's original timestamp. Subsequent stakes and profit are recalculated from the corrected sequence.</p>
@@ -216,7 +251,7 @@ const makeRules = settings => ({
   startingSequence: [...settings.startingSequence]
 });
 function newSession(settings,bankrollCents){
-  return {id:`${Date.now()}_${Math.random().toString(36).slice(2,9)}`,startBankrollCents:bankrollCents,rules:makeRules(settings),hands:[],side:settings.defaultSide||'Banker'};
+  return {id:`${Date.now()}_${Math.random().toString(36).slice(2,9)}`,startBankrollCents:bankrollCents,rules:makeRules(settings),hands:[],withdrawals:[],side:settings.defaultSide||'Banker'};
 }
 function derive(session){
   const rules=session.rules;
@@ -251,8 +286,11 @@ function derive(session){
   const end=closed?details[details.length-1].ts:null;
   const nextUnits=terms.length===0?0:terms[0]+(terms.length>1?terms[terms.length-1]:0);
   const nextStakeCents=Math.round(nextUnits*rules.unitCents);
+  // Cash withdrawals do not count as gambling losses. They reduce available balance only.
   const profitCents=bankrollCents-session.startBankrollCents;
-  return {terms,bankrollCents,profitCents,wins,losses,ties,bankerResults,playerResults,betTotalCents,
+  const withdrawnCents=(Array.isArray(session.withdrawals)?session.withdrawals:[]).reduce((sum,w)=>sum+(Number(w.amountCents)||0),0);
+  bankrollCents-=withdrawnCents;
+  return {terms,bankrollCents,profitCents,withdrawnCents,wins,losses,ties,bankerResults,playerResults,betTotalCents,
     hands:details, start,end,closed,nextUnits,nextStakeCents,minutes:minutesBetween(start,end)};
 }
 function historyEntry(session, summary, status, endAt){
@@ -260,10 +298,10 @@ function historyEntry(session, summary, status, endAt){
   return {id:session.id,startedAt:summary.start,endedAt,status,
     durationMinutes:minutesBetween(summary.start,endedAt),hands:summary.hands.length,
     wins:summary.wins,losses:summary.losses,ties:summary.ties,
-    profitCents:summary.profitCents,openingCents:session.startBankrollCents,
+    profitCents:summary.profitCents,withdrawnCents:summary.withdrawnCents,openingCents:session.startBankrollCents,
     closingCents:summary.bankrollCents,bankerResults:summary.bankerResults,playerResults:summary.playerResults};
 }
-function initialState(){const settings={...DEFAULTS,startingSequence:[...DEFAULTS.startingSequence]};return {settings,session:newSession(settings,settings.startingBankrollCents),history:[],deletedHistoryIds:[],page:'play'};}
+function initialState(){const settings={...DEFAULTS,startingSequence:[...DEFAULTS.startingSequence]};return {settings,session:newSession(settings,settings.startingBankrollCents),history:[],withdrawals:[],deletedHistoryIds:[],page:'play'};}
 function loadState(){
   try {
     const raw=localStorage.getItem(KEY);
@@ -271,6 +309,10 @@ function loadState(){
     const obj=JSON.parse(raw);
     if(!obj || !obj.session || !obj.settings || !Array.isArray(obj.history) || !validSequence(obj.session.rules.startingSequence))return initialState();
     if(!validSequence(obj.settings.startingSequence))obj.settings.startingSequence=[...DEFAULTS.startingSequence];
+    if(!Array.isArray(obj.withdrawals))obj.withdrawals=[];
+    obj.withdrawals=obj.withdrawals.filter(w=>w&&typeof w.id==='string'&&Number.isSafeInteger(w.amountCents)&&w.amountCents>0&&Number.isFinite(w.ts));
+    if(!Array.isArray(obj.session.withdrawals))obj.session.withdrawals=[];
+    obj.session.withdrawals=obj.session.withdrawals.filter(w=>w&&typeof w.id==='string'&&Number.isSafeInteger(w.amountCents)&&w.amountCents>0);
     if(!Array.isArray(obj.deletedHistoryIds))obj.deletedHistoryIds=[];
     obj.deletedHistoryIds=obj.deletedHistoryIds.filter(id=>typeof id==='string');
     if(!Array.isArray(obj.session.hands))obj.session.hands=[];
@@ -380,6 +422,7 @@ function updateClock(){
 function render(){
   const s=derive(state.session),side=state.session.side;
   el('bankrollValue').textContent=euro(s.bankrollCents);
+  el('liveWithdrawTotal').textContent=euro(state.withdrawals.reduce((sum,w)=>sum+w.amountCents,0));
   el('profitValue').textContent=(s.profitCents>0?'+':'')+euro(s.profitCents);
   el('profitValue').className=`metric-value ${s.profitCents>0?'positive':s.profitCents<0?'negative':''}`;
   el('nextBet').textContent=s.closed?'—':euro(s.nextStakeCents);
@@ -412,6 +455,68 @@ function render(){
   updateClock();renderHistory();renderSettings();
   document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('selected',b.dataset.page===state.page));
   for(const page of ['play','history','settings'])el('page-'+page).hidden=state.page!==page;
+}
+function showWithdrawalForm(){
+  const available=derive(state.session).bankrollCents;
+  el('withdrawAvailable').textContent=euro(available);
+  const f=el('withdrawForm'); f.reset();
+  f.elements.amount.max=(Math.max(0,available)/100).toFixed(2);
+  el('withdrawError').hidden=true;
+  el('withdrawOverlay').hidden=false;document.body.classList.add('modal-open');
+  f.elements.amount.focus();
+}
+function closeWithdrawalForm(){el('withdrawOverlay').hidden=true;document.body.classList.remove('modal-open');}
+function recordWithdrawal(ev){
+  ev.preventDefault();
+  const f=ev.currentTarget.elements;
+  const amountRaw=String(f.amount.value).trim(),amount=Number(amountRaw),amountCents=Math.round(amount*100);
+  const available=derive(state.session).bankrollCents;
+  const fail=msg=>{el('withdrawError').textContent=msg;el('withdrawError').hidden=false;};
+  if(!/^(?:\d+)(?:\.\d{1,2})?$/.test(amountRaw)||!Number.isSafeInteger(amountCents)||amountCents<=0)return fail('Enter an amount greater than €0.00 with at most 2 decimal places.');
+  if(amountCents>available)return fail(`The withdrawal exceeds your available bankroll (${euro(available)}).`);
+  const note=String(f.note.value||'').trim().slice(0,120);
+  if(!confirm(`Record ${euro(amountCents)} withdrawn to your bank?\n\nAvailable bankroll: ${euro(available)} → ${euro(available-amountCents)}\n\nSession betting P/L will NOT change. This is a bookkeeping entry only.`))return;
+  const previousSession=state.session, priorLedger=state.withdrawals;
+  // Do not alter an already completed historical session: open a fresh empty sequence.
+  if(derive(state.session).closed){
+    logClearedIfNeeded();
+    state.session=newSession(state.settings,available);
+  }
+  if(!Array.isArray(state.session.withdrawals))state.session.withdrawals=[];
+  const w={id:`w_${Date.now()}_${Math.random().toString(36).slice(2,9)}`,ts:Date.now(),amountCents,note,sessionId:state.session.id};
+  state.session.withdrawals.push({id:w.id,amountCents,ts:w.ts});
+  state.withdrawals=[...state.withdrawals,w];
+  if(!store()){
+    state.session=previousSession;
+    state.withdrawals=priorLedger;
+    return fail('The withdrawal was not saved. Check device storage and export a backup.');
+  }
+  closeWithdrawalForm();render();notify(`${euro(amountCents)} withdrawal recorded. Bankroll now ${euro(derive(state.session).bankrollCents)}.`);
+}
+function getFilteredWithdrawals(win,invalid){
+  if(invalid)return [];
+  return state.withdrawals.filter(w=>{
+    const k=dateKey(w.ts);
+    return k!==null&&(!win.from||k>=win.from)&&(!win.to||k<=win.to);
+  });
+}
+function renderWithdrawals(win,invalid){
+  const entries=getFilteredWithdrawals(win,invalid);
+  const total=state.withdrawals.reduce((sum,w)=>sum+w.amountCents,0);
+  const current=entries.reduce((sum,w)=>sum+w.amountCents,0);
+  el('totalWithdrawnValue').textContent=euro(total);
+  el('rangeWithdrawnValue').textContent=euro(current);
+  el('withdrawCountValue').textContent=entries.length;
+  el('exportWithdrawalsBtn').disabled=!entries.length;
+  el('withdrawalList').innerHTML=entries.length?[...entries].reverse().map(w=>`<div class="withdraw-entry"><div><strong>Bank withdrawal</strong><small>${dateFmt(w.ts)}${w.note?` · ${htmlSafe(w.note)}`:''}</small></div><b>−${euro(w.amountCents)}</b></div>`).join(''):'<p class="empty">No withdrawals recorded for this date range.</p>';
+}
+function exportWithdrawalsCsv(){
+  const {win,invalid}=getFilteredHistoryEntries();
+  if(invalid)return notify('Correct the date filter first.',true);
+  const entries=getFilteredWithdrawals(win,invalid);
+  const data=[['Date','Amount EUR','Note','Withdrawal ID'],...entries.map(w=>[new Date(w.ts).toISOString(),(w.amountCents/100).toFixed(2),w.note||'',w.id])];
+  downloadFile('baccarat_withdrawals_'+new Date().toISOString().slice(0,10)+'.csv',data.map(r=>r.map(v=>'"'+csvSafe(v).replace(/"/g,'""')+'"').join(',')).join('\r\n'),'text/csv;charset=utf-8');
+  notify(`${entries.length} withdrawal${entries.length===1?'':'s'} exported.`);
 }
 // Read-only date filter: never changes live play, saved history or imported records.
 function dateKey(ts){
@@ -461,6 +566,7 @@ function renderHistory(){
   el('histProfit').textContent=(totalProfit>0?'+':'')+euro(totalProfit);
   el('histProfit').className=`metric-value ${totalProfit>0?'positive':totalProfit<0?'negative':''}`;
   el('histTime').textContent=timeFmt(totalMinutes);
+  renderWithdrawals(win,invalid);
   const range=win.from||win.to ? `${win.from||'Earliest'} → ${win.to||'Latest'}`:'All time';
   const undatedNote=(win.from||win.to)&&undated?` · ${undated} undated session${undated===1?'':'s'} excluded`:'';
   el('histRangeSummary').innerHTML=`<span>${invalid?'<b class="filter-warning">From date must be on or before To date.</b>':`<b>${hist.length}</b> of ${state.history.length} saved sessions${undatedNote}`}</span><span class="date-range">${range}</span>`;
@@ -469,7 +575,7 @@ function renderHistory(){
   el('historyList').innerHTML=hist.length?filtered.slice().reverse().map(({h,sessionNumber})=>`<article class="history-card">
     <div class="history-top"><div><b>Session #${sessionNumber}</b><span class="status-pill ${h.status==='CLEARED'?'ok':'stopped'}">${htmlSafe(h.status)}</span></div><strong class="${h.profitCents>0?'positive':h.profitCents<0?'negative':''}">${h.profitCents>0?'+':''}${euro(h.profitCents)}</strong></div>
     <div class="history-meta"><div><small>Start</small><b>${dateFmt(h.startedAt)}</b></div><div><small>Finish</small><b>${dateFmt(h.endedAt)}</b></div><div><small>Duration</small><b>${timeFmt(h.durationMinutes)}</b></div><div><small>Hands</small><b>${h.hands}</b></div><div><small>Opening</small><b>${euro(h.openingCents)}</b></div><div><small>Closing</small><b>${euro(h.closingCents)}</b></div></div>
-    <p class="session-foot">Banker ${h.bankerResults||0} · Player ${h.playerResults||0} · Tie ${h.ties||0}</p>
+    <p class="session-foot">Banker ${h.bankerResults||0} · Player ${h.playerResults||0} · Tie ${h.ties||0}${h.withdrawnCents?` · Withdrawn ${euro(h.withdrawnCents)} (not P/L)`:''}</p>
     ${h.notes?`<p class="history-notes">${htmlSafe(h.notes)}</p>`:''}
     <div class="history-actions"><span class="helper">${h.editedAt?'✎ Corrected '+dateFmt(h.editedAt):'Saved session'}</span><div class="history-action-buttons"><button class="history-edit-btn" data-edit-id="${htmlSafe(h.id)}" type="button" aria-label="Edit session ${sessionNumber}">✎ EDIT</button><button class="history-delete-btn" data-delete-id="${htmlSafe(h.id)}" type="button" aria-label="Delete session ${sessionNumber}">✕ DELETE</button></div></div>
   </article>`).join(''): `<p class="empty">${state.history.length?'No saved sessions match the selected dates. Adjust the filter or tap SHOW ALL DATES.':'No saved sessions yet. A session is saved automatically when the sequence reaches zero terms.'}</p>`;
@@ -526,7 +632,9 @@ function updateEditPreview(){
   const count=Number(f.bankerResults.value||0)+Number(f.playerResults.value||0)+Number(f.ties.value||0);
   el('editHandsPreview').textContent=`${count} recorded hand${count===1?'':'s'} (Banker + Player + Tie)`;
   const open=Number(f.opening.value),profit=Number(f.profit.value);
-  el('editClosingPreview').textContent=euro(Number.isFinite(open)&&Number.isFinite(profit)?Math.round((open+profit)*100):0);
+  const saved=state.history.find(h=>h.id===f.sessionId.value);
+  const withdrawn=saved?.withdrawnCents||0;
+  el('editClosingPreview').textContent=euro(Number.isFinite(open)&&Number.isFinite(profit)?Math.round((open+profit)*100)-withdrawn:0);
 }
 function syncEditDuration(source){
   const f=el('editHistoryForm').elements;
@@ -557,7 +665,7 @@ function saveHistoryChanges(event){
   const durationMinutes=minutesBetween(startedAt,endedAt);
   Object.assign(h,{
     status:f.status.value==='STOPPED'?'STOPPED':'CLEARED',
-    startedAt,endedAt,durationMinutes,openingCents,profitCents,closingCents:openingCents+profitCents,
+    startedAt,endedAt,durationMinutes,openingCents,profitCents,closingCents:openingCents+profitCents-(h.withdrawnCents||0),
     bankerResults,playerResults,ties,hands:bankerResults+playerResults+ties,
     notes:String(f.notes.value||'').slice(0,500),editedAt:Date.now()
   });
@@ -565,7 +673,8 @@ function saveHistoryChanges(event){
 }
 
 function renderSettings(){
-  el('settingsForm').elements.bankroll.value=(state.settings.startingBankrollCents/100).toFixed(2);
+  // Show the real available balance, preventing Save Settings from undoing a withdrawal.
+  el('settingsForm').elements.bankroll.value=(derive(state.session).bankrollCents/100).toFixed(2);
   el('settingsForm').elements.unit.value=(state.settings.unitCents/100).toFixed(2);
   el('settingsForm').elements.commission.value=state.settings.bankerCommissionPct;
   el('settingsForm').elements.minimum.value=(state.settings.tableMinCents/100).toFixed(2);
@@ -618,22 +727,26 @@ function downloadFile(filename,content,mime){
 const csvSafe=s=> {const t=String(s);return /^[\s]*[=+\-@]/.test(t)&&isNaN(Number(t))?"'"+t:t;};
 function exportCsv(filtered=false){
   const entries=filtered?getFilteredHistoryEntries().filtered:state.history.map((h,i)=>({h,sessionNumber:i+1}));
-  const header=['Session','Start','End','Minutes','Hands','Status','Profit EUR','Opening EUR','Closing EUR','Banker','Player','Tie','Notes','Last Edited'];
-  const rows=entries.map(({h,sessionNumber})=>[sessionNumber,h.startedAt==null?'':new Date(h.startedAt).toISOString(),h.endedAt==null?'':new Date(h.endedAt).toISOString(),Number(h.durationMinutes||0).toFixed(2),h.hands,h.status,(h.profitCents/100).toFixed(2),(h.openingCents/100).toFixed(2),(h.closingCents/100).toFixed(2),h.bankerResults||0,h.playerResults||0,h.ties||0,h.notes||'',h.editedAt?new Date(h.editedAt).toISOString():'']);
+  const header=['Session','Start','End','Minutes','Hands','Status','Profit EUR','Withdrawn EUR','Opening EUR','Closing EUR','Banker','Player','Tie','Notes','Last Edited'];
+  const rows=entries.map(({h,sessionNumber})=>[sessionNumber,h.startedAt==null?'':new Date(h.startedAt).toISOString(),h.endedAt==null?'':new Date(h.endedAt).toISOString(),Number(h.durationMinutes||0).toFixed(2),h.hands,h.status,(h.profitCents/100).toFixed(2),((h.withdrawnCents||0)/100).toFixed(2),(h.openingCents/100).toFixed(2),(h.closingCents/100).toFixed(2),h.bankerResults||0,h.playerResults||0,h.ties||0,h.notes||'',h.editedAt?new Date(h.editedAt).toISOString():'']);
   const name=filtered?'baccarat_session_history_filtered.csv':'baccarat_session_history.csv';
   downloadFile(name,[header,...rows].map(row=>row.map(s=>'"'+csvSafe(s).replace(/"/g,'""')+'"').join(',')).join('\r\n'),'text/csv;charset=utf-8');
   notify(`${entries.length} session${entries.length===1?'':'s'} exported to CSV.`);
 }
 
-function exportBackup(){downloadFile('baccarat_backup_'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify({version:2,settings:state.settings,session:state.session,history:state.history,deletedHistoryIds:state.deletedHistoryIds},null,2),'application/json');notify('Full backup exported.');}
+function exportBackup(){downloadFile('baccarat_backup_'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify({version:3,settings:state.settings,session:state.session,history:state.history,withdrawals:state.withdrawals,deletedHistoryIds:state.deletedHistoryIds},null,2),'application/json');notify('Full backup exported.');}
 function importBackup(ev){
   const file=ev.target.files?.[0];if(!file)return;
   const reader=new FileReader();reader.onload=()=>{
     try{
       const data=JSON.parse(String(reader.result));
       if(!data.settings||!data.session||!Array.isArray(data.history)||!validSequence(data.settings.startingSequence)||!validSequence(data.session.rules.startingSequence)||!Array.isArray(data.session.hands))throw Error('Invalid backup');
-      if(!confirm('Restore this backup? Current data on this device will be replaced.'))return;
-      state={settings:data.settings,session:data.session,history:data.history,deletedHistoryIds:Array.isArray(data.deletedHistoryIds)?data.deletedHistoryIds:[],page:'play'};store();render();notify('Backup restored.');
+      if(!confirm('Restore this backup? Current data, INCLUDING withdrawal history, will be replaced. Export a backup first if necessary.'))return;
+      if(!Array.isArray(data.session.withdrawals))data.session.withdrawals=[];
+      const previousState=state;
+      state={settings:data.settings,session:data.session,history:data.history,withdrawals:Array.isArray(data.withdrawals)?data.withdrawals:[],deletedHistoryIds:Array.isArray(data.deletedHistoryIds)?data.deletedHistoryIds:[],page:'play'};
+      if(!store()){state=previousState;return notify('Restore could not be saved. Old data retained.',true);}
+      render();notify('Backup restored, including withdrawal history if present.');
     }catch(e){notify('Cannot import this backup file.',true)}finally{ev.target.value='';}
   };reader.readAsText(file);
 }
@@ -949,6 +1062,12 @@ window.addEventListener('DOMContentLoaded',()=>{
   el('correctCancelBtn').addEventListener('click',closeHandCorrection);
   el('correctHandOverlay').addEventListener('click',e=>{if(e.target===e.currentTarget)closeHandCorrection();});
   el('newSeqBtn').addEventListener('click',startNewSession);
+  el('openWithdrawBtn').addEventListener('click',showWithdrawalForm);
+  el('withdrawForm').addEventListener('submit',recordWithdrawal);
+  el('withdrawCloseBtn').addEventListener('click',closeWithdrawalForm);
+  el('withdrawCancelBtn').addEventListener('click',closeWithdrawalForm);
+  el('withdrawOverlay').addEventListener('click',e=>{if(e.target===e.currentTarget)closeWithdrawalForm();});
+  el('exportWithdrawalsBtn').addEventListener('click',exportWithdrawalsCsv);
   el('saveSessionBtn').addEventListener('click',saveSession);
   el('settingsForm').addEventListener('submit',applySettings);
   el('exportCsvBtn').addEventListener('click',()=>exportCsv(false));
@@ -973,7 +1092,7 @@ window.addEventListener('DOMContentLoaded',()=>{
   el('editCloseBtn').addEventListener('click',closeHistoryEditor);
   el('editCancelBtn').addEventListener('click',closeHistoryEditor);
   el('editHistoryOverlay').addEventListener('click',e=>{if(e.target===e.currentTarget)closeHistoryEditor();});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!el('correctHandOverlay').hidden)closeHandCorrection();else if(!el('editHistoryOverlay').hidden)closeHistoryEditor();}});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!el('withdrawOverlay').hidden)closeWithdrawalForm();else if(!el('correctHandOverlay').hidden)closeHandCorrection();else if(!el('editHistoryOverlay').hidden)closeHistoryEditor();}});
   const editForm=el('editHistoryForm');
   editForm.addEventListener('input',e=>{
     const name=e.target.name;
