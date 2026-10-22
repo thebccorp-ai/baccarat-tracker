@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0a111f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Baccarat Tracker"><meta name="description" content="Baccarat tracker with date-filtered session history, bankroll syncing, session timer and editable history"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><title>Labouchere Baccarat — v10 + Withdrawals</title><style>:root{color-scheme:dark;--bg:#0a111f;--surface:#121d2e;--card:#162439;--line:#29384d;--text:#eff5fb;--muted:#9caec5;--blue:#429eff;--red:#ff6b7b;--green:#45dba0;--amber:#ffd17c}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0a111f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Baccarat Tracker"><meta name="description" content="Baccarat tracker with date-filtered session history, bankroll syncing, session timer and editable history"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><title>Labouchere Baccarat — v12 · Session Results & Full Reset</title><style>:root{color-scheme:dark;--bg:#0a111f;--surface:#121d2e;--card:#162439;--line:#29384d;--text:#eff5fb;--muted:#9caec5;--blue:#429eff;--red:#ff6b7b;--green:#45dba0;--amber:#ffd17c}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(850px 550px at 80% -260px,#233d68 5%,transparent 80%),var(--bg);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
 button,input,select{font:inherit}button{cursor:pointer;touch-action:manipulation}button:disabled{opacity:.4;cursor:not-allowed}input,select{color:var(--text)}a{color:var(--blue)}.app{max-width:900px;margin:0 auto;padding:0 16px 100px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:27px 0 18px}.brandmark{display:flex;align-items:center;gap:12px}.brandicon{width:39px;height:39px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(140deg,#48a5ff,#596be7);font-size:23px;font-weight:900;box-shadow:0 8px 30px #0c4e9b55}.brandtop{font-weight:850;letter-spacing:.11em;font-size:13px}.brandsub{font-size:12px;color:var(--muted);letter-spacing:.045em}.livepill{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:#152438;border-radius:25px;padding:8px 10px;font-size:12px;color:var(--muted);white-space:nowrap}.livepill:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px #45dba01c}.tabbar{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:#111d2d;padding:5px;border:1px solid var(--line);border-radius:15px;margin:0 0 19px}.tab{border:0;border-radius:10px;padding:12px 6px;background:transparent;color:var(--muted);font-weight:750;font-size:13px}.tab.selected{color:var(--text);background:#283b53;box-shadow:0 2px 8px #0002}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.stat{background:linear-gradient(140deg,#17263a,#121f31);border:1px solid var(--line);border-radius:14px;padding:15px 16px;min-width:0}.stat-label{display:block;font-size:11px;font-weight:750;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px}.metric-value{font-size:clamp(22px,6vw,32px);font-weight:850;letter-spacing:-.05em;line-height:1.15;overflow-wrap:anywhere}.positive{color:var(--green)!important}.negative{color:var(--red)!important}.muted{color:var(--muted)}.primary-stat{border-color:#335e86;background:linear-gradient(125deg,#173555,#17263b)}.status-banner{display:flex;align-items:center;gap:12px;margin:13px 0 15px;padding:12px 15px;border:1px solid var(--line);border-radius:13px;background:#152436}.status-banner>span:first-child{font-size:20px;color:var(--blue)}.status-banner b{display:block;font-size:12px;letter-spacing:.06em}.status-banner small{display:block;color:var(--muted);font-size:12px;margin-top:3px}.status-banner.cleared{border-color:#237354;background:#102d2a}.status-banner.cleared>span:first-child{color:var(--green)}.status-banner.playing>span:first-child{color:var(--amber)}.section{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:17px;padding:17px}.section-header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.section-title{font-size:13px;text-transform:uppercase;letter-spacing:.09em;margin:0;font-weight:850;color:#c6d8ea}.small-tag{font-size:11px;color:var(--muted);font-weight:650}.stake{display:flex;align-items:center;justify-content:space-between;gap:12px}.next-value{font-size:clamp(37px,11vw,62px);font-weight:870;letter-spacing:-.065em;line-height:1.1;color:#fff}.next-units{font-size:13px;color:var(--muted);padding-top:4px}.terms-badge{border-radius:12px;background:#203b54;padding:10px 14px;text-align:center;min-width:87px}.terms-badge strong{display:block;font-size:29px;line-height:1.1}.terms-badge small{display:block;font-size:10px;letter-spacing:.08em;margin-top:6px;color:#bdd3eb;font-weight:800;text-transform:uppercase}.seq-terms{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}.term{background:#1f3047;border:1px solid #34465e;border-radius:9px;padding:7px 11px;min-width:36px;text-align:center;font-size:14px;font-weight:800}.term.edge{background:#24588e;border-color:#357fb6}.zero-terms{color:var(--green);font-weight:800;font-size:13px}.section .explain{font-size:12px;color:var(--muted);margin:13px 0 0;line-height:1.55}.label{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.095em;font-weight:800;margin-bottom:8px}.sidepick{display:grid;grid-template-columns:1fr 1fr;gap:9px}.side{border:1px solid #405167;color:#9fb3ca;background:#17283e;border-radius:12px;padding:13px 8px;font-weight:900;font-size:14px;transition:background .12s}.side.active.blue{background:#123a69;border-color:#389bff;color:#cee9ff}.side.active.red{background:#612838;border-color:#ef667b;color:#ffe0e5}.result-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-top:12px}.result{min-width:0;border-radius:15px;border:1px solid transparent;min-height:94px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;font-weight:950;font-size:16px;box-shadow:inset 0 1px #ffffff22,0 7px 20px #0003;transition:transform .1s}.result:active{transform:scale(.96)}.result small{font-size:11px;font-weight:600;opacity:.85}.result.banker{background:#ad334c;border-color:#fb647e;color:#fff}.result.player{background:#1463ae;border-color:#3c9df0;color:#fff}.result.tie{background:#176a55;border-color:#34c498;color:#fff}.risk{margin-top:12px;padding:10px 12px;border-radius:10px;color:#ffd7a3;background:#483014;border:1px solid #86602d;font-size:12px;font-weight:650}.actions{display:flex;gap:9px;margin-top:15px}.btn{border:1px solid #3a536e;background:#22384f;color:var(--text);border-radius:12px;padding:12px 15px;font-weight:800;font-size:12px;min-height:45px}.btn:active{transform:scale(.985)}.btn-full{width:100%}.btn-primary{background:#267be0;border-color:#3ca2ff;color:white}.btn-muted{background:#172538}.stack{display:flex;flex-direction:column;gap:9px}.handrow{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 0;border-bottom:1px solid var(--line);font-size:13px}.handrow:last-child{border:0}.handrow>div:last-child{text-align:right}.handrow small{display:block;font-size:11px;color:var(--muted);margin-top:4px}.result-dot{width:9px;height:9px;display:inline-block;border-radius:50%;margin-right:5px}.result-dot.banker{background:var(--red)}.result-dot.player{background:var(--blue)}.result-dot.tie{background:var(--green)}.empty{text-align:center;color:var(--muted);font-size:13px;line-height:1.55;padding:12px}.timer-line{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px;border-top:1px solid var(--line);padding-top:14px}.timer-value{font-size:20px;font-weight:850}.helper{color:var(--muted);font-size:11px;line-height:1.5}.history-head{margin-bottom:18px}.page-title{font-size:24px;font-weight:850;letter-spacing:-.035em;margin:4px 0 6px}.page-sub{margin:0 0 18px;color:var(--muted);font-size:13px;line-height:1.6}.history-card{background:var(--surface);border:1px solid var(--line);border-radius:15px;margin:12px 0;padding:16px}.history-top{display:flex;justify-content:space-between;gap:8px;align-items:center}.history-top>div{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.history-top strong{font-size:19px}.status-pill{border-radius:7px;padding:4px 7px;font-size:10px;font-weight:800;letter-spacing:.04em}.status-pill.ok{background:#164332;color:#65e8a6}.status-pill.stopped{background:#503a1e;color:#ffd084}.history-meta{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:19px}.history-meta>div{display:flex;flex-direction:column;gap:4px}.history-meta small{color:var(--muted);font-size:11px}.history-meta b{font-size:12px}.session-foot{font-size:11px;color:var(--muted);padding-top:11px;margin:15px 0 0;border-top:1px solid var(--line)}.field{display:flex;flex-direction:column;gap:6px;margin:14px 0}.field span{color:#bfd0e0;font-size:12px;font-weight:700}.field input,.field select{width:100%;padding:13px 12px;border:1px solid #365068;border-radius:10px;background:#0d1a2a;outline:0;font-size:16px}.field input:focus,.field select:focus{border-color:var(--blue);box-shadow:0 0 0 3px #297cdb33}.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.footer{font-size:11px;line-height:1.6;color:var(--muted);text-align:center;padding:18px 0}.toast{position:fixed;bottom:28px;left:50%;transform:translate(-50%,16px);z-index:11;width:min(92vw,450px);background:#163f36;color:#ddfff0;border:1px solid #398f70;padding:13px 16px;border-radius:12px;box-shadow:0 8px 25px #0009;text-align:center;opacity:0;pointer-events:none;font-size:12px;font-weight:700;transition:opacity .2s,transform .2s}.toast.show{opacity:1;transform:translate(-50%,0)}.toast.error{background:#563042;border-color:#a45168;color:#ffe7e7}#page-history,#page-settings{padding-bottom:30px}[hidden]{display:none!important}@media(min-width:680px){.app{padding:0 28px 80px}.stats{grid-template-columns:repeat(4,1fr)}.stats .stat{min-height:112px}.dashboard-layout{display:grid;grid-template-columns:1.18fr 1fr;gap:15px;align-items:start}.dashboard-layout .section{margin-top:15px}.metrics-wide{grid-column:span 2}.history-meta{grid-template-columns:repeat(3,1fr)}.result{min-height:110px}}@media(max-width:360px){.top{padding-top:17px}.brandtop{font-size:12px}.brandsub{font-size:10px}.section{padding:13px}.result{min-height:85px;font-size:14px}.metric-value{font-size:22px}.tab{font-size:12px}.livepill{font-size:10px}}
 
@@ -79,6 +79,26 @@ body.modal-open{overflow:hidden}
 .withdraw-entry b{font-size:17px;color:#a4e8fa;white-space:nowrap}
 .cash-caption{font-size:11px;line-height:1.6;color:var(--muted);margin-top:8px}
 @media(max-width:420px){.withdraw-strip{align-items:stretch}.withdraw-strip .btn{width:100%}}
+
+/* v12 — independently scrollable history cards and recorded session outcome order */
+.history-scroll-section{margin-top:14px;border:1px solid var(--line);border-radius:16px;background:#111d2d;padding:13px}
+.history-scroll-section .section-header{margin-bottom:6px}
+.history-scroll-list{max-height:min(65vh,650px);min-height:120px;overflow-y:scroll;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#6599bb #172538;scrollbar-gutter:stable;outline-offset:3px;padding:2px 6px 2px 1px}
+.history-scroll-list::-webkit-scrollbar{width:9px}.history-scroll-list::-webkit-scrollbar-thumb{background:#6599bb;border-radius:8px}.history-scroll-list::-webkit-scrollbar-track{background:#172538;border-radius:8px}
+.history-scroll-list .history-card{margin:10px 0}
+.session-results{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+.session-results-title{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:7px;font-size:11px;font-weight:850;letter-spacing:.05em;text-transform:uppercase;color:#d4e3f2;margin-bottom:8px}
+.result-legend{display:flex;gap:9px;align-items:center;font-size:10px;color:var(--muted);text-transform:none;letter-spacing:0}
+.result-legend .dot{width:7px;height:7px;border-radius:50%;display:inline-block;margin-right:2px}.dot.banker{background:var(--red)}.dot.player{background:var(--blue)}.dot.tie{background:var(--green)}
+.hand-preview{display:flex;align-items:center;flex-wrap:wrap;gap:5px;margin:6px 0}
+.hand-chip{display:inline-grid;place-items:center;width:27px;height:27px;border:1px solid transparent;border-radius:8px;font-size:12px;font-weight:900;color:#fff;flex-shrink:0}
+.hand-chip.banker{background:#ad334c;border-color:#fd657b}.hand-chip.player{background:#1463ae;border-color:#4faeff}.hand-chip.tie{background:#176a55;border-color:#45dba0}
+.extra-hands{color:var(--muted);font-size:11px;padding-left:5px}
+.session-results details{margin-top:8px}.session-results summary{cursor:pointer;font-size:12px;font-weight:750;color:#9fcfff;padding:7px 0;touch-action:manipulation}
+.session-results-scroll{display:flex;align-content:flex-start;flex-wrap:wrap;gap:8px;max-height:190px;overflow-y:auto;overscroll-behavior:contain;background:#0d1b2d;border:1px solid #263e55;border-radius:11px;padding:10px;scrollbar-width:thin;scrollbar-color:#6599bb #0d1b2d}
+.turn-item{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:30px}.turn-item small{font-size:9px;color:var(--muted)}
+.results-unavailable{font-size:11px;color:var(--muted);line-height:1.5;margin:8px 0 0}
+.danger-zone{border-color:#8a4051;background:#291c2a}.danger-zone .section-title{color:#ffc0c8}.danger-zone .helper{margin-top:12px}.btn-danger{background:#8e2d48;border-color:#f16986;color:#fff}
 </style></head><body><div class="app"><header class="top">
  <div class="brandmark"><div class="brandicon" aria-hidden="true">L</div><div><div class="brandtop">LABOUCHERE</div><div class="brandsub">Baccarat · Mobile Tracker v10 · Withdrawals</div></div></div>
  <div class="livepill">On-device history</div>
@@ -149,7 +169,10 @@ body.modal-open{overflow:hidden}
  <p id="excelImportStatus" class="import-status" role="status">Your Excel file stays on this device. Import does not modify your current bankroll.</p>
  <details id="excelImportDetails" class="import-debug" hidden><summary>Show import report / every detected row</summary><pre id="excelImportReport" class="import-report"></pre><button class="btn" id="downloadImportReportBtn" type="button">↓ DOWNLOAD IMPORT REPORT</button></details>
  </section>
- <div id="historyList"></div><div class="footer">Session history and withdrawals stay in this browser only. BACKUP ALL DATA exports both. Before switching files, browser, or GitHub URL, export and restore that JSON backup.</div>
+ <section class="history-scroll-section" aria-label="Saved sessions with scrolling">
+  <div class="section-header"><h2 class="section-title">SAVED SESSIONS</h2><span class="small-tag">Scroll down to review every session ↓</span></div>
+  <div id="historyList" class="history-scroll-list" tabindex="0" aria-label="Scroll through all saved sessions"></div>
+ </section><div class="footer">Session history and withdrawals stay in this browser only. BACKUP ALL DATA exports both. Before switching files, browser, or GitHub URL, export and restore that JSON backup.</div>
 </main>
 <main id="page-settings" hidden><h1 class="page-title">Session settings</h1><p class="page-sub">Change unit value, sequence, and limits. Changing your bankroll updates Live Tracker immediately. Other betting rules update at the next sequence if a session is active.</p>
  <form id="settingsForm" class="section"><h2 class="section-title">Betting rules</h2>
@@ -167,6 +190,15 @@ body.modal-open{overflow:hidden}
  <p class="explain">Saving a new bankroll updates the Live Tracker immediately—even mid-session—and keeps your betting profit/loss separate from the balance correction. Betting rules stay unchanged until the next sequence.</p>
  </form>
  <section class="section"><h2 class="section-title">Transfer / restore your data</h2><p class="explain">Export the backup JSON from History, then restore it here. This replaces this device's current data.</p><label class="field"><span>Restore a previous JSON backup</span><input type="file" id="restoreInput" accept=".json,application/json"></label></section>
+ <section class="section danger-zone" aria-labelledby="resetAllHeading">
+  <h2 class="section-title" id="resetAllHeading">RESET ENTIRE TRACKER</h2>
+  <p class="explain">Start completely over: delete all betting hands, session history, withdrawal history, bankroll changes and customized settings on this device. This is <b>not</b> the normal Reset / New Sequence button.</p>
+  <div class="stack" style="margin-top:15px">
+    <button type="button" class="btn btn-muted btn-full" id="backupBeforeResetBtn">↓ BACKUP ALL DATA FIRST</button>
+    <button type="button" class="btn btn-danger btn-full" id="resetAllDataBtn">✕ RESET ALL DATA</button>
+  </div>
+  <p class="helper">This cannot be undone without a previous JSON backup. Requires two confirmations.</p>
+ </section>
  <div class="footer">Baccarat rules assume standard commission Banker bet and ordinary Banker/Player wagers. No side bets or special no-commission variants.</div>
 </main>
 <div id="withdrawOverlay" class="modal-backdrop" hidden role="dialog" aria-modal="true" aria-labelledby="withdrawTitle">
@@ -299,7 +331,9 @@ function historyEntry(session, summary, status, endAt){
     durationMinutes:minutesBetween(summary.start,endedAt),hands:summary.hands.length,
     wins:summary.wins,losses:summary.losses,ties:summary.ties,
     profitCents:summary.profitCents,withdrawnCents:summary.withdrawnCents,openingCents:session.startBankrollCents,
-    closingCents:summary.bankrollCents,bankerResults:summary.bankerResults,playerResults:summary.playerResults};
+    closingCents:summary.bankrollCents,bankerResults:summary.bankerResults,playerResults:summary.playerResults,
+    // Preserve the exact chronological outcome order for this completed/stopped session.
+    resultSequence:summary.hands.map(hand=>hand.result)};
 }
 function initialState(){const settings={...DEFAULTS,startingSequence:[...DEFAULTS.startingSequence]};return {settings,session:newSession(settings,settings.startingBankrollCents),history:[],withdrawals:[],deletedHistoryIds:[],page:'play'};}
 function loadState(){
@@ -556,6 +590,32 @@ function getFilteredHistoryEntries(){
   });
   return {filtered,win,invalid,undated};
 }
+const RESULT_SYMBOLS={Banker:'B',Player:'P',Tie:'T'};
+function sessionResultOrder(h){
+  // Old imported Excel rows only contain totals. Never fabricate the sequence.
+  if(Array.isArray(h.resultSequence))return h.resultSequence.filter(x=>Object.hasOwn(RESULT_SYMBOLS,x));
+  // A previously saved v10 session may still be the currently loaded completed session.
+  if(h.id===state.session.id)return derive(state.session).hands.map(x=>x.result);
+  return null;
+}
+function resultSymbol(result,index){
+  const type=result.toLowerCase();
+  return `<span class="hand-chip ${type}" title="Hand ${index+1}: ${result}" aria-label="Hand ${index+1}: ${result}">${RESULT_SYMBOLS[result]}</span>`;
+}
+function resultOrderHtml(h){
+  const results=sessionResultOrder(h);
+  if(!results||!results.length)return `<div class="session-results"><div class="session-results-title">Result order</div><p class="results-unavailable">Individual hand order unavailable for this older or Excel-imported session. Only result totals were saved.</p></div>`;
+  const maxPreview=16;
+  const preview=results.slice(0,maxPreview).map(resultSymbol).join('');
+  const more=results.length>maxPreview?`<span class="extra-hands">+${results.length-maxPreview} more</span>`:'';
+  const all=results.map((r,i)=>`<span class="turn-item"><small>${i+1}</small>${resultSymbol(r,i)}</span>`).join('');
+  return `<div class="session-results">
+   <div class="session-results-title"><span>Result order · ${results.length} hands</span><span class="result-legend"><span><i class="dot banker"></i>B</span><span><i class="dot player"></i>P</span><span><i class="dot tie"></i>T</span></span></div>
+   <div class="hand-preview" aria-label="First ${Math.min(results.length,maxPreview)} recorded results in order">${preview}${more}</div>
+   <details><summary>VIEW ALL ${results.length} HAND RESULTS ↓</summary><div class="session-results-scroll" aria-label="Results from first to last">${all}</div></details>
+   ${h.editedAt?'<small class="helper">Recorded hand order is preserved; manually edited summary counts may differ.</small>':''}
+  </div>`;
+}
 function renderHistory(){
   const {filtered,win,invalid,undated}=getFilteredHistoryEntries();
   const hist=filtered.map(e=>e.h),finished=hist.filter(h=>h.status==='CLEARED');
@@ -576,6 +636,7 @@ function renderHistory(){
     <div class="history-top"><div><b>Session #${sessionNumber}</b><span class="status-pill ${h.status==='CLEARED'?'ok':'stopped'}">${htmlSafe(h.status)}</span></div><strong class="${h.profitCents>0?'positive':h.profitCents<0?'negative':''}">${h.profitCents>0?'+':''}${euro(h.profitCents)}</strong></div>
     <div class="history-meta"><div><small>Start</small><b>${dateFmt(h.startedAt)}</b></div><div><small>Finish</small><b>${dateFmt(h.endedAt)}</b></div><div><small>Duration</small><b>${timeFmt(h.durationMinutes)}</b></div><div><small>Hands</small><b>${h.hands}</b></div><div><small>Opening</small><b>${euro(h.openingCents)}</b></div><div><small>Closing</small><b>${euro(h.closingCents)}</b></div></div>
     <p class="session-foot">Banker ${h.bankerResults||0} · Player ${h.playerResults||0} · Tie ${h.ties||0}${h.withdrawnCents?` · Withdrawn ${euro(h.withdrawnCents)} (not P/L)`:''}</p>
+    ${resultOrderHtml(h)}
     ${h.notes?`<p class="history-notes">${htmlSafe(h.notes)}</p>`:''}
     <div class="history-actions"><span class="helper">${h.editedAt?'✎ Corrected '+dateFmt(h.editedAt):'Saved session'}</span><div class="history-action-buttons"><button class="history-edit-btn" data-edit-id="${htmlSafe(h.id)}" type="button" aria-label="Edit session ${sessionNumber}">✎ EDIT</button><button class="history-delete-btn" data-delete-id="${htmlSafe(h.id)}" type="button" aria-label="Delete session ${sessionNumber}">✕ DELETE</button></div></div>
   </article>`).join(''): `<p class="empty">${state.history.length?'No saved sessions match the selected dates. Adjust the filter or tap SHOW ALL DATES.':'No saved sessions yet. A session is saved automatically when the sequence reaches zero terms.'}</p>`;
@@ -727,13 +788,27 @@ function downloadFile(filename,content,mime){
 const csvSafe=s=> {const t=String(s);return /^[\s]*[=+\-@]/.test(t)&&isNaN(Number(t))?"'"+t:t;};
 function exportCsv(filtered=false){
   const entries=filtered?getFilteredHistoryEntries().filtered:state.history.map((h,i)=>({h,sessionNumber:i+1}));
-  const header=['Session','Start','End','Minutes','Hands','Status','Profit EUR','Withdrawn EUR','Opening EUR','Closing EUR','Banker','Player','Tie','Notes','Last Edited'];
-  const rows=entries.map(({h,sessionNumber})=>[sessionNumber,h.startedAt==null?'':new Date(h.startedAt).toISOString(),h.endedAt==null?'':new Date(h.endedAt).toISOString(),Number(h.durationMinutes||0).toFixed(2),h.hands,h.status,(h.profitCents/100).toFixed(2),((h.withdrawnCents||0)/100).toFixed(2),(h.openingCents/100).toFixed(2),(h.closingCents/100).toFixed(2),h.bankerResults||0,h.playerResults||0,h.ties||0,h.notes||'',h.editedAt?new Date(h.editedAt).toISOString():'']);
+  const header=['Session','Start','End','Minutes','Hands','Status','Profit EUR','Withdrawn EUR','Opening EUR','Closing EUR','Banker','Player','Tie','Notes','Last Edited','Hand Result Order (B/P/T)'];
+  const rows=entries.map(({h,sessionNumber})=>[sessionNumber,h.startedAt==null?'':new Date(h.startedAt).toISOString(),h.endedAt==null?'':new Date(h.endedAt).toISOString(),Number(h.durationMinutes||0).toFixed(2),h.hands,h.status,(h.profitCents/100).toFixed(2),((h.withdrawnCents||0)/100).toFixed(2),(h.openingCents/100).toFixed(2),(h.closingCents/100).toFixed(2),h.bankerResults||0,h.playerResults||0,h.ties||0,h.notes||'',h.editedAt?new Date(h.editedAt).toISOString():'',(sessionResultOrder(h)||[]).map(x=>RESULT_SYMBOLS[x]).join(' ')]);
   const name=filtered?'baccarat_session_history_filtered.csv':'baccarat_session_history.csv';
   downloadFile(name,[header,...rows].map(row=>row.map(s=>'"'+csvSafe(s).replace(/"/g,'""')+'"').join(',')).join('\r\n'),'text/csv;charset=utf-8');
   notify(`${entries.length} session${entries.length===1?'':'s'} exported to CSV.`);
 }
 
+function resetAllData(){
+  if(!confirm('RESET ALL DATA?\n\nThis will erase ALL sessions, hand results, withdrawal records, bankroll changes and custom settings stored in this app on this device.\n\nCancel to keep your records. Make a JSON backup first.'))return;
+  const answer=prompt('Final confirmation: type RESET to permanently erase your app data.');
+  if(answer!=='RESET')return notify('Reset canceled. Your records are unchanged.');
+  const oldState=state;
+  state=initialState();
+  if(!store()){
+    state=oldState;
+    return notify('Unable to save reset; existing data retained. Check browser storage.',true);
+  }
+  el('histFilterPreset').value='all'; el('histDateFrom').value=''; el('histDateTo').value='';
+  closeHandCorrection();closeWithdrawalForm();closeHistoryEditor();
+  render();window.scrollTo({top:0});notify('All app data cleared. New tracker starts from the default settings.');
+}
 function exportBackup(){downloadFile('baccarat_backup_'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify({version:3,settings:state.settings,session:state.session,history:state.history,withdrawals:state.withdrawals,deletedHistoryIds:state.deletedHistoryIds},null,2),'application/json');notify('Full backup exported.');}
 function importBackup(ev){
   const file=ev.target.files?.[0];if(!file)return;
@@ -1079,6 +1154,8 @@ window.addEventListener('DOMContentLoaded',()=>{
     el('histFilterPreset').value='all'; el('histDateFrom').value=''; el('histDateTo').value=''; renderHistory();
   });
   el('backupBtn').addEventListener('click',exportBackup);
+  el('backupBeforeResetBtn').addEventListener('click',exportBackup);
+  el('resetAllDataBtn').addEventListener('click',resetAllData);
   el('restoreInput').addEventListener('change',importBackup);
   el('excelHistoryInput').addEventListener('change',importExcelHistory);
   el('downloadImportReportBtn').addEventListener('click',()=>downloadFile('baccarat_import_diagnostic.txt',el('excelImportReport').textContent,'text/plain;charset=utf-8'));
@@ -1102,6 +1179,11 @@ window.addEventListener('DOMContentLoaded',()=>{
   });
   document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>{state.page=b.dataset.page;render();window.scrollTo({top:0,behavior:'instant'});}));
   if('serviceWorker' in navigator && location.protocol==='https:') navigator.serviceWorker.register('./service-worker.js').catch(()=>{});
+  const previousCurrent=state.history.find(h=>h.id===state.session.id);
+  if(previousCurrent && !Array.isArray(previousCurrent.resultSequence) && state.session.hands.length){
+    previousCurrent.resultSequence=derive(state.session).hands.map(h=>h.result);
+    store();
+  }
   logClearedIfNeeded();render();
   setInterval(updateClock,1000);
 });
