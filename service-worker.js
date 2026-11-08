@@ -1,4 +1,4 @@
-const CACHE = 'baccarat-mobile-session-history-v12';
+const CACHE = 'baccarat-banker-20pct-manual-practice-v1';
 const ASSETS = ['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install', event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));
